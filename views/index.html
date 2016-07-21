@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-	<h1>Now We're Cooking with Thermonuclear Fusion</h1>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Space Be What It Do</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- VENDOR SCRIPTS -->
+    <script src="vendor/jQuery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/handlebars/handlebars.min.js"></script>
+
+    <!-- APPLICATION SCRIPTS -->
+    <script src="scripts/app.js"></script>
+  </head>
+<body>
+
+<!-- NAV BAR -->
+
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div id='top_nav' class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="btn btn-default" aria-label="Left Align">
+  <span id='brand' class="navbar-brand" href="/"><img src="../styles/raven-ico.svg" aria-hidden="true"></span>
+</button>
+                
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">T1</a></li>
+                <li><a href="#">T2</a></li>
+                <li><a href="#">T3</a></li>
+                <li><a href="#">T4</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- CENTER PAGE CONTENT -->
+
+
+
+		
+		<div id='apod_image_container' class='col-xs-12'>
+		<h5 id="apod_title" class = 'col-xs-12'></h5>
+		<div class='col-xs-2'></div>
+			<img id="apod_img_id" class="col-xs-12"/>
+  
+  			<iframe id="apod_vid_id" type="text/html" class='col-xs-12'frameborder="0"></iframe>
+  			<p id="copyright" class='col-xs-12'></p>
+ 		</div>
+  
+  		
+  		<!-- <div id="apod_explaination_container"
+  		<p id="apod_explaination"></p>
+  		</div> -->
+
+
+
+<!-- BOTTOM NAV BAR -->
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div id='top_nav' class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="btn btn-default" aria-label="Left Align">
+  <span id='brand' class="navbar-brand" href="/"><img src="../styles/raven-ico.svg" aria-hidden="true"></span>
+</button>     
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">B1</a></li>
+                <li><a href="#">B2</a></li>
+                <li><a href="#">B3</a></li>
+                <li><a href="#">B4</a></li>
+            </ul>
+        </div>
+    </nav>
+		
+  
 </body>
 </html>
