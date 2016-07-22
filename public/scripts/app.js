@@ -1,6 +1,21 @@
 console.log("Sanity Check: JS is working!");
 $(document).ready(function() {
 
+
+$(".dropdown1").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+
+
+
+
 var apod_endpoint = "https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo";
 
 
@@ -30,4 +45,11 @@ $.get(apod_endpoint).success(function handleApodSuccess(apod){
 
 
 });
+
+
+
+
+
 });
+
+

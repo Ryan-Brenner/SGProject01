@@ -2,15 +2,13 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var AstroLogSchema = new Schema({
-	logId: String
-	logGroupId: String //pin id
+	logGroupId: { type: Number , default: 1 }//pin id
 	userId: String
-	date: Date
-	time: Date
-	weather: Object	
-	visibility: Number
-	rating: Number
-	viewing tool: String
+	date: { type: Date, default: Date.now().getTime()}
+	weather: Object,	
+	visibility: Number,
+	rating: Number,
+	viewing_tool: String,
 	comments: String
  });
 

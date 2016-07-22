@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // We'll serve jQuery and bootstrap from a local bower cache avoiding CDNs
 // We're placing these under /vendor to differentiate them from our own assets
 app.use('/vendor', express.static(__dirname + '/bower_components'));
+app.use(express.static(__dirname+'/views'));
 
 var controllers = require('./controllers');
 
@@ -27,13 +28,38 @@ var controllers = require('./controllers');
  */
 
 app.get('/', function homepage (req, res) {
-  res.sendFile(__dirname + '/views/index.html');
+  res.send('index');
 });
+
+
 
 
 /*
  * JSON API Endpoints
  */
+
+app.get('/api', function api_index(req, res) {
+res.json({
+    message: "Welcome to the Astropol api! Here's what you need to know!",
+    documentation_url: "https://github.com/Ryan-Brenner/SGProject01_api/README.md", // CHANGE ME
+    base_url: "http://astropol.herokuapp.com", // CHANGE ME
+    endpoints: [
+        { method: "GET", path: "/api", description: "Describes all available endpoints"},
+        { method: "GET", path: "/api/home", description: "Homepage"},
+        { method: "GET", path: "/api/logs", description: "Logs posted by users"},
+        { method: "GET", path: "/api/events", description: "upcoming astronomy events"},
+        { method: "POST", path: "/api/logs", description: "post a new log"},
+        { method: "POST", path: "/api/pins", description: "Create a new stargazing location"},
+        ]
+    });
+});
+app.get('/home')
+app.get('api/home')
+
+
+
+
+
 
 
 
