@@ -2,8 +2,9 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var AstroLogSchema = new Schema({
-	logID: String
-	userID: String
+	logId: String
+	logGroupId: String //pin id
+	userId: String
 	date: Date
 	time: Date
 	weather: Object	
