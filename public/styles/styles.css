@@ -16,10 +16,10 @@ body{
 
 }
 
-te
+
 
 h1 {
-	padding-top: 20%;
+	padding-top: 5%;
 	text-align:center;
 	color: #432E36 ;
 	font-family: cursive;
@@ -27,33 +27,14 @@ h1 {
 }
 
 
-#menu{
-
-	display:inline;
-
-
-
-	}
-
-
-#top_nav > ul >li>a {
-	padding-top: 5%;
-	padding-right: 0, auto;
-	display: inline;
+#form_container{
+visibility: hidden;
+}
+#new_log_form{
+    visibility: hidden;
 }
 
-#top_nav > div >a {
-	padding-top: 5%;
-	padding-right: 0, auto;
-	display: inline;
-}
 
-#top_nav > ul >li {
-
-	padding-top: 5%;
-	padding-right: 0, auto;
-	display: inline;
-}
 
 #apod_image_container > p {
 	text-align: center;
@@ -94,46 +75,7 @@ border-radius: 15%;
 
 }
 
-#bottom_nav {
 
-text-align:center;
-color: #FDFFF7;
-
-}
-
-
-
-
-/* Bootstrap overrides */
-
-.navbar-brand>img {
-  padding-top: 1px;
-  margin-left: 1px;
-  margin-right: 5px;
-}
-
-#sign_in_text{
-
-padding-right: 5%;
-
-}
-
-.navbar ul {
-  background: none;
-}
-
-.navbar-inverse {
-  background-color: #586994;
-  border-width: 0px;
-}
-
-.navbar-inverse .navbar-nav li a {
-  color: #FDFFF7;
-}
-
-.navbar-inverse .navbar-nav li a:hover {
-  color: #96350C;
-}
 
 /* Utilities for Testing*/
 

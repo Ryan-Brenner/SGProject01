@@ -38,9 +38,10 @@ app.get('/', function homepage (req, res) {
  * JSON API Endpoints
  */
 
-
+// app.get('/', controllers.homeController.setApod);
 app.get('/api', controllers.api.index);
 app.get('/astrologs', controllers.astroLogs.index);
+app.post('/astrologs', controllers.astroLogs.create);
 //app.get('/home', controllers.home.show);
 // app.get('/api/albums/:albumId', controllers.albums.show);
 // app.post('/api/albums', controllers.albums.create);
@@ -54,23 +55,20 @@ app.get('/astrologs', controllers.astroLogs.index);
 
 
 
-app.get('api/AstroLogs', function(req,res){
-    //books here
-        db.Log.find({}, function(err,astroLogs){
-            if(err) {
-                res.send(err);
-            }else if(astrologs) {
-                res.send(astrologs);
-            }
-        });
-});
-
-
-
+// app.get('api/AstroLogs', function(req,res){
+//     //books here
+//         db.Log.find({}, function(err,astroLogs){
+//             if(err) {
+//                 res.send(err);
+//             }else if(astrologs) {
+//                 res.send(astrologs);
+//             }
+//         });
+// });
 
 app.post('/logs', function(req,res){
     //add books
-        db.Book.insert(newBook)
+        db.AstroLog.insert(newAstroLog)
 
 })
 

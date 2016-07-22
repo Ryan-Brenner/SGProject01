@@ -3,10 +3,10 @@
  ************/
 var db = require('../models');
 
-// GET /api/albums
+// GET /api/astroLogs
 function index(req, res) {
-  db.AstroLog,find({}, function(err,allAstroLogs){
-   res.json(allAstroLogs); 
+  db.AstroLog.find({}, function(err,allAstroLogs){
+   res.send(allAstroLogs); 
   });
 };
 
