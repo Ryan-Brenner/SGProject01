@@ -1,10 +1,10 @@
 var mongoose = require("mongoose");
-var Schema = mongoose.Schema;
+	 Schema = mongoose.Schema;
 
 var AstroLogSchema = new Schema({
-	logGroupId: { type: Number , default: 1 }//pin id
-	userId: String
-	date: { type: Date, default: Date.now().getTime()}
+	logGroupId: { type: Number , default: 1 },//pin id
+	userId: String,
+	date: { type: Date, default: Date.now()},
 	weather: Object,	
 	visibility: Number,
 	rating: Number,

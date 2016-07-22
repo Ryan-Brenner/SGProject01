@@ -38,24 +38,41 @@ app.get('/', function homepage (req, res) {
  * JSON API Endpoints
  */
 
-app.get('/api', function api_index(req, res) {
-res.json({
-    message: "Welcome to the Astropol api! Here's what you need to know!",
-    documentation_url: "https://github.com/Ryan-Brenner/SGProject01_api/README.md", // CHANGE ME
-    base_url: "http://astropol.herokuapp.com", // CHANGE ME
-    endpoints: [
-        { method: "GET", path: "/api", description: "Describes all available endpoints"},
-        { method: "GET", path: "/api/home", description: "Homepage"},
-        { method: "GET", path: "/api/logs", description: "Logs posted by users"},
-        { method: "GET", path: "/api/events", description: "upcoming astronomy events"},
-        { method: "POST", path: "/api/logs", description: "post a new log"},
-        { method: "POST", path: "/api/pins", description: "Create a new stargazing location"},
-        ]
-    });
-});
-app.get('/home')
-app.get('api/home')
 
+app.get('/api', controllers.api.index);
+app.get('/astrologs', controllers.astroLogs.index);
+//app.get('/home', controllers.home.show);
+// app.get('/api/albums/:albumId', controllers.albums.show);
+// app.post('/api/albums', controllers.albums.create);
+// app.post('/api/albums/:albumId/songs', controllers.albumsSongs.create);
+
+
+
+
+
+
+
+
+
+app.get('api/AstroLogs', function(req,res){
+    //books here
+        db.Log.find({}, function(err,astroLogs){
+            if(err) {
+                res.send(err);
+            }else if(astrologs) {
+                res.send(astrologs);
+            }
+        });
+});
+
+
+
+
+app.post('/logs', function(req,res){
+    //add books
+        db.Book.insert(newBook)
+
+})
 
 
 
