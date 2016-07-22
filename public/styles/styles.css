@@ -4,21 +4,36 @@
 #432E36 Old Burgundy
 #666666 Satan Gray
 #FDFFF7 Baby Powder
-#C1AE7C Ecru --> beige
+#FFE4A3 navajo white --> beige
 #586994 UCLA Blue --> light-ish blue
-
+#D8D8D8 timberwolf (gray)
 
 #B4ADEA maximum Blue Purple*/
 
+body{
 
+	background-color:#FFE4A3;
+
+}
 
 
 
 h1 {
-
+	padding-top: 20%;
 	text-align:center;
+	color: #432E36 ;
+	font-family: cursive;
+	font-size: 48px;
 }
 
+
+#menu{
+
+	display:inline;
+
+
+
+	}
 
 
 #top_nav > ul >li>a {
@@ -43,25 +58,50 @@ h1 {
 #apod_image_container > p {
 	text-align: center;
 	font-size: 12px;
-	margin-top: -5%;
 	color: white;
-	
+}
+
+
+#copyright{
+
+margin-top: -10%;
 
 }
 #apod_image_container > h5{
-	text-align: center;
-	font-size: 18px;
-	margin: 0, auto;
-	margin: auto 0;
+	font-size: 18px
+}
+
+#apod_title{
+	
+	z-index:1000;
+}
+
+
+#apod_img{
+border-width: 10px;
+border-style: solid;
+border-color: #D8D8D8;
+border-radius: 15%;
+
 }
 
 #apod_image_container{
 	text-align: center;
 	margin: 0, auto;
-	margin-top: 20%;
 	transform: scale(0.85, 0.85);
+	background-color: rgba(216, 216, 216,0.8);
+	border-radius: 15%;
 
 }
+
+#bottom_nav {
+
+text-align:center;
+color: #FDFFF7;
+
+}
+
+
 
 
 /* Bootstrap overrides */
@@ -72,22 +112,27 @@ h1 {
   margin-right: 5px;
 }
 
+#sign_in_text{
+
+padding-right: 5%;
+
+}
 
 .navbar ul {
   background: none;
 }
 
 .navbar-inverse {
-  background-color: #432818;
+  background-color: #586994;
   border-width: 0px;
 }
 
 .navbar-inverse .navbar-nav li a {
-  color: #D6CCA9;
+  color: #FDFFF7;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-  color: #B2481A
+  color: #96350C;
 }
 
 /* Utilities for Testing*/
@@ -99,3 +144,18 @@ h1 {
 .blue {
   background-color: blue;
 }
+
+
+
+
+/*icons i will need*/
+/*glyphicon glyphicon-pencil*/
+/*glyphicon glyphicon-ok
+glyphicon glyphicon-home
+glyphicon glyphicon-list-alt
+glyphicon glyphicon-edit
+glyphicon glyphicon-arrow-left
+glyphicon glyphicon-arrow-right
+glyphicon glyphicon-calendar
+glyphicon glyphicon-log-in
+glyphicon glyphicon-log-out*/

@@ -25,13 +25,13 @@
 
  <nav class="navbar navbar-inverse navbar-fixed-top">
         <div id='top_nav' class="container-fluid">
-            <div class="navbar-header">
-            <button type="button" class="btn btn-default" aria-label="Left Align">
-  <span id='brand' class="navbar-brand" href="/"><img src="../styles/raven-ico.svg" aria-hidden="true"></span>
-</button>
+            
                 
-            </div>
+            
             <ul class="nav navbar-nav">
+            	<li><button type="button" id='menu' class="btn btn-default" aria-label="Left Align">
+  <span id='brand' class="navbar-brand" href="/"><img src="../styles/raven-ico.svg" aria-hidden="true"></span>
+</button></li>
                 <li><a href="#">T1</a></li>
                 <li><a href="#">T2</a></li>
                 <li><a href="#">T3</a></li>
@@ -40,6 +40,12 @@
         </div>
     </nav>
 
+ <!-- HEADLINE CONTENT -->
+
+ <h1>Welcome to .....</h1>
+
+
+
 
 <!-- CENTER PAGE CONTENT -->
 
@@ -47,11 +53,11 @@
 
 		
 		<div id='apod_image_container' class='col-xs-12'>
-		<h5 id="apod_title" class = 'col-xs-12'></h5>
+		<h5 id="apod_title" class = 'col-xs-11'></h5>
 		<div class='col-xs-2'></div>
-			<img id="apod_img_id" class="col-xs-12"/>
+			<img id="apod_img" class="col-xs-12"/>
   
-  			<iframe id="apod_vid_id" type="text/html" class='col-xs-12'frameborder="0"></iframe>
+  			<iframe id="apod_vid" type="text/html" class='col-xs-12'frameborder="0"></iframe>
   			<p id="copyright" class='col-xs-12'></p>
  		</div>
   
@@ -68,15 +74,16 @@
   <nav class="navbar navbar-inverse navbar-fixed-bottom">
         <div id='top_nav' class="container-fluid">
             <div class="navbar-header">
-            <button type="button" class="btn btn-default" aria-label="Left Align">
-  <span id='brand' class="navbar-brand" href="/"><img src="../styles/raven-ico.svg" aria-hidden="true"></span>
-</button>     
+            
             </div>
-            <ul class="nav navbar-nav">
-                <li><a href="#">B1</a></li>
-                <li><a href="#">B2</a></li>
-                <li><a href="#">B3</a></li>
-                <li><a href="#">B4</a></li>
+            <ul id='bottom_nav' class="nav navbar-nav">
+                <li id='sign_in_text'>Sign In</li>
+                <li> 
+	             <button id= 'b_m_ico' type="button" class="btn btn-default" aria-label="Left Align">
+				 	 <span id='Log in' class="glyphicon glyphicon-log-in glyphicon-trash"  href="/" aria-hidden="true"></span>
+				</button>     
+			</li>
+                
             </ul>
         </div>
     </nav>
