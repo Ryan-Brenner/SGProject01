@@ -1,10 +1,9 @@
-var mongoose = require('mongoose'),
- Schema = mongoose.Schema;
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 var AstroLogSchema = new Schema({
-	
-	comments: String,
-	name: String
+	name: String,
+	comments: String
  });
 
 var AstroLog = mongoose.model('AstroLog', AstroLogSchema);

@@ -66,11 +66,6 @@ app.post('/astrologs', controllers.astroLogs.create);
 //         });
 // });
 
-app.post('/logs', function(req,res){
-    //add books
-        db.AstroLog.insert(newAstroLog)
-
-})
 
 
 
